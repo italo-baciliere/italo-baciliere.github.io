@@ -1,0 +1,126 @@
+.simetria {
+    max-width: 80em;
+}
+
+
+/* MENU */
+
+.header_main {
+    height: 600px;
+    width: 100%;
+    /*margin: 0 auto -1em auto;
+    padding: 1.5em 5.5% 1.25em;*/
+    -webkit-transition: padding .3s ease;
+    transition: padding .3s ease;
+    /*display: flex;*/
+    background-color: #191919;
+}
+
+.header-background {
+    width: 100%;
+    height: 100%;
+    background-image: url(/resouces/images/coffee.jpg);
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    /*filter: blur(2px);*/
+    float: left;
+}
+
+.baciliere-picture {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 5;
+    bottom: 4em;
+}
+
+.menu {
+    display: flex;
+    align-items: end;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu ul li {
+    /* Exibir todas as opções em uma linha horizontal*/
+    display: inline;
+}
+
+.menu ul li a {
+    padding: 3px 10px;
+    display: inline-block;
+    margin: 0px 30px;
+    /* visual do link */
+    color: #333;
+    text-decoration: none;
+    /*border-bottom: 3px solid gold;*/
+}
+
+.menu ul li a:hover {
+    /*border-bottom: 3px solid black;*/
+    color: #0597F2;
+}
+
+.section_nav_left {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -12em;
+}
+
+
+/* MENU */
+
+@media (min-width:320px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .baciliere-picture {
+        width: 120px;
+        height: 120px;
+        left: 37%;
+    }
+}
+
+@media (min-width:480px) {
+    /* smartphones, Android phones, landscape iPhone */
+    .baciliere-picture {
+        left: 41%;
+    }
+}
+
+@media (min-width:600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media (min-width:801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .baciliere-picture {
+        width: 200px;
+        height: 200px;
+        left: 41%;
+        bottom: 6.5em;
+    }
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+    .baciliere-picture {
+        left: 42%;
+    }
+}
+
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
+    .baciliere-picture {
+        left: 44%;
+    }
+}

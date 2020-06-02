@@ -1,0 +1,30 @@
+.container{}
+
+.pai{
+    height: 400px;
+    background-color: tomato;
+    display: flex;
+    /* flex-direction: row;*/ /* Determina a direção dos meus itens */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.filho{
+    background-color: aquamarine;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.item1{
+    flex-grow: 2; /* Cresce o elemento x vezes a mais*/
+}
+.item2{}
+.item3{}
+.item4{}

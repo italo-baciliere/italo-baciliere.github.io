@@ -1,0 +1,240 @@
+@media (min-width:320px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+
+@media (min-width:480px) {
+    /* smartphones, Android phones, landscape iPhone */
+}
+
+@media (min-width:600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media (min-width:801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
+}
+
+.simetria {
+    max-width: 80em;
+}
+
+
+/* FORMULÁRIO 01 */
+
+.html_form_01 {
+    width: 50%;
+}
+
+.html_form_01 div {
+    display: inline;
+    height: 266px;
+    margin-top: 30px;
+}
+
+.html_form_01 input {
+    padding: 7px;
+    background-color: #F2F2F2;
+    box-shadow: 0px 0px 0px 0px #0597F2;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.html_form_01 input:hover {
+    box-shadow: 0px 1px 0px 0px #0597F2;
+}
+
+
+/*
+|   First Block
+*/
+
+.html_form_01 .first_block label {
+    float: left;
+    width: 22%;
+    margin: 6px 0px;
+}
+
+.html_form_01 .first_block input {
+    /*width: 40em;*/
+    width: 67%;
+    margin: 6px 0px;
+}
+
+
+/*
+|   Secund Block
+*/
+
+.html_form_01 .secund_block {}
+
+.html_form_01 .secund_block label {
+    float: left;
+    width: 22%;
+    margin: 6px 0px;
+}
+
+.html_form_01 .secund_block input {
+    float: left;
+    width: 17%;
+    margin: 6px 30px 0px 0px;
+}
+
+.html_form_01 .secund_block label {
+    float: left;
+    width: 22%;
+    margin: 6px 0px;
+}
+
+.html_form_01 .secund_block input[type="radio"] {
+    float: left;
+    width: 3%;
+    margin: 6px 30px 30px 0px;
+}
+
+.html_form_01 .third_block {}
+
+.html_form_01 .third_block label {
+    margin: 8px 3px;
+}
+
+.html_form_01 .third_block input {
+    margin: 8px 3px;
+}
+
+
+/*
+|   Third Block
+*/
+
+.html_form_01 .third_block {}
+
+
+/* FORMULÁRIO 01 */
+
+
+/* FORMULÁRIO 02 */
+
+.html_form_02 {
+    width: 30%;
+    display: inline-block;
+}
+
+.d_in_grid {
+    display: inline-grid;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.html_form_02 fieldset label {
+    margin: 10px 0px 10px;
+}
+
+.html_form_02 fieldset input {
+    padding: 10px;
+}
+
+.btn {
+    box-shadow: 0px 0px 0px 0px transparent;
+    padding: 7px;
+    border-radius: 5px;
+    border: 0px;
+    width: 20%;
+    margin-right: 10px;
+}
+
+.btn_submit {
+    background-color: #0597F2;
+}
+
+.btn_reset {
+    background-color: #F2F2F2;
+}
+
+
+/* /FORMULÁRIO 02 */
+
+
+/* Color Theme Swatches in Hex */
+
+
+/*
+.Moda-1-hex {
+    color: #D9B0CA;
+}
+
+.Moda-2-hex {
+    color: #0597F2;
+}
+
+.Moda-3-hex {
+    color: #0378A6;
+}
+
+.Moda-4-hex {
+    color: #05C7F2;
+}
+
+.Moda-5-hex {
+    color: #012326;
+}
+*/
+
+
+/* Color Theme Swatches in RGBA */
+
+
+/*
+.Moda-1-rgba {
+    color: rgba(216, 175, 202, 1);
+}
+
+.Moda-2-rgba {
+    color: rgba(4, 151, 242, 1);
+}
+
+.Moda-3-rgba {
+    color: rgba(3, 119, 165, 1);
+}
+
+.Moda-4-rgba {
+    color: rgba(4, 198, 242, 1);
+}
+
+.Moda-5-rgba {
+    color: rgba(0, 34, 38, 1);
+}
+*/
+
+
+/* Color Theme Swatches in HSLA */
+
+
+/*
+.Moda-1-hsla {
+    color: hsla(320, 34, 76, 1);
+}
+
+.Moda-2-hsla {
+    color: hsla(202, 96, 48, 1);
+}
+
+.Moda-3-hsla {
+    color: hsla(196, 96, 33, 1);
+}
+
+.Moda-4-hsla {
+    color: hsla(191, 96, 48, 1);
+}
+
+.Moda-5-hsla {
+    color: hsla(185, 96, 7, 1);
+}
+*/

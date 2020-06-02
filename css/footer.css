@@ -1,0 +1,92 @@
+/*.shadow {
+    box-shadow: 0 20px 30px -16px rgba(9, 9, 16, .2);
+}*/
+
+.footer {
+    background-color: black;
+    height: 440px;
+}
+
+.section-developer-data {    
+    height: 250px;
+    width: auto;
+    float: right; /* Utilizar o align-content: end || vertical-align */
+    padding-top: 120px;
+    position: static;
+}
+
+
+/*------------------------------
+|   Foto do desenvolvedor
+|--------------------------------
+|
+*/
+
+.developer-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    float: right;
+    position: relative;
+    top: -25px;
+    right: 63px;
+}
+
+
+
+/*------------------------------
+|   Dados do desenvolvedor
+|--------------------------------
+|
+*/
+
+.div-developer-data {
+    width: 330px;
+}
+
+.div-developer-data p {
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 16px; /* Alterar para em*/
+}
+
+
+
+/*------------------------------
+|   Midias sociais do desenvolvedor
+|--------------------------------
+|
+*/
+
+.div-developer-media {
+    margin-top: 20px;
+}
+
+.div-developer-media a:hover img {
+    transform: scale(1.1);
+}
+
+.div-developer-media img {
+    opacity: 0.8;
+    width: 32px;
+    height: 32px;
+    margin-right: 30px;
+    transition: all .3s;
+}
+
+
+/*------------------------------
+|   Midias sociais do desenvolvedor
+|--------------------------------
+|
+*/
+
+.footer h1 {
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.6);
+    clear: right;
+    text-align: center;
+    font-weight: bold;
+}
