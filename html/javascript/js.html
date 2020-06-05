@@ -20,5 +20,29 @@
     <h1>Hello {{name}}</h1>
   </div>
 
+  <h1>Aula inicial JavaScript</h1>
+
+  Bolo Front-End
+
+  <p id="player">Player 1: Maria
+
+
+
+    <script>
+      var paragrafo = document.getElementById("player");  
+      // console.log(document.getElementById("#player"));
+      // seleciona o elemento "p" do html e atribui a variável "paragrafo"
+      paragrafo.addEventListener('click', getName);            
+      // variável "paragrafo" escuta o evento 'click' e executa a função "novoNome"
+      function getName(){    
+        var nome = prompt('Entre com o novo nome!');
+        // Função "getName" cria a variável "nome" e manda uma mensagem na tela para o usuário digitar um valor.
+        paragrafo.textContent = 'Player1: ' + nome;
+        //Variavél "paragrafo" imprime no Elemento "p" Player1 + "nome digido pela usuário".
+        document.getElementById("player").classList.add("test_class");        
+      }
+    </script>
+
 </body>
+
 </html> 

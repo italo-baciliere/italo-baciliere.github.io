@@ -1,3 +1,11 @@
-html{
+@font-face{
+    font-family: montserrat;
+    src:url()
+}
+
+/*https://fonts.google.com/specimen/Montserrat?query=Mont#standard-styles*/
+
+body{
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
