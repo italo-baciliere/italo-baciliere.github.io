@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+
+    <h1>Acessibilidade</h1>
+    <p>
+        "Accessibility" generally means having web content and a user interface that can be understood, 
+        navigated, and interacted with by a broad audience. This includes people with visual, auditory, mobility, or cognitive disabilities.
+    </p>
+    <p>
+        Here are three general concepts this section will explore throughout the following challenges:
+    </p>
+    <ol>
+        <li>have well-organized code that uses appropriate markup</li>
+        <li>ensure text alternatives exist for non-text and visual content</li>
+        <li>create an easily-navigated page that's keyboard-friendly</li>                
+    </ol>    
+    
+
+    <h2>Add a text Alternative to Images for Visually Impaired Accessibility</h2>
+    <p>
+        <span>Alt</span> text describes the content of the image and provides a text-alternative for it. This helps in cases where
+        the image fails to load or cant'n be seen by a user. It's also used by search engines to understand what an image contains 
+        to include it in search results. Here's an example:
+    </p>
+    <img src="https://img.icons8.com/ios-filled/50/000000/accessibility2.png" alt="accessibility icon"/> <!-- https://icons8.com/icon/23620/web-accessibility -->
+    <textarea id="" name="textarea" rows="2" cols="50" wrap="off" readonly>
+        <img src="https://img.icons8.com/ios-filled/50/000000/accessibility2.png" alt="accessibility icon"/>
+    </textarea>
+    <p>You should always include an alt attribute on your image. Per HTML5 specification, this is now considered mandatory.</p>
+
+    <p>In situations when an image is already explained with text content, or does not add meaning to a page, 
+        the img still needs an alt attribute, but it can be set to an empty string. Here's an example:
+    </p>    
+    <textarea id="" name="textarea" rows="2" cols="30" wrap="off" readonly>
+        <img src="background.png" alt=""/>
+    </textarea>
+
+
+    <h2>Use Headings to Show Hierarchical Relationships of Content</h2>
+    <p>
+        Headings (h1 through h6 elements) are workhorse tags that help provide structure and labeling to your content. 
+        Screen readers can be set to read only the headings on a page so the user gets a summary. 
+        This means it is important for the heading tags in your markup to have semantic meaning and relate to each other, 
+        not be picked merely for their size values.
+    </p>
+    <p>Headings Hierarchy</p>    
+    <textarea id="" name="textarea" rows="7" cols="20" wrap="off" readonly>
+
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+        <h4></h4>
+        <h5></h5>
+        <h6></h6>
+    </textarea>
+
+
+    <h2>semantic tags</h2>
+    <p>
+        HTML5 introduced a number of new elements that give developers more options while also incorporating accessibility features. 
+        These tags include <span>main</span>, <span>header</span>, <span>footer</span>, <span>nav</span>, <span>article</span>, 
+        and <span>section</span>, among others.
+    </p>
+    <textarea id="" name="textarea" rows="4" cols="30" wrap="off" readonly>        
+        <html>
+            <header>
+
+            </header>
+
+            <body>
+                <header></header>
+                <main></main>
+                <footer></footer>
+
+            </body>
+        </html>        
+    </textarea>
+
+
+    <h3>Note About <span>section</span> and <span>div</span></h3>
+    <p>
+        The section element is also new with HTML5, and has a slightly different semantic meaning than article. 
+        An article is for standalone content, and a section is for grouping thematically related content. 
+        They can be used within each other, as needed. For example, if a book is the article, then each chapter is a section. 
+        When there's no relationship between groups of content, then use a div.
+    </p>
+    <textarea id="" name="textarea" rows="5" cols="60" wrap="off" readonly>
+
+        <div> - groups content
+        <section> - groups related content
+        <article> - groups independet, self-contained content
+    </textarea>
+
+    <label for="">Textarea</label>    
+    <textarea id="" name="textarea" rows="4" cols="30" wrap="off" readonly>
+        It was a dark and stormy night...
+        <html></html>        
+    </textarea>
+
+</body>
+</html>
