@@ -97,11 +97,78 @@
         <article> - groups independet, self-contained content
     </textarea>
 
+    
+
+    <h2>Improve Accessibility of Audio Content with the audio Element</h2>
+
+    <p>HTML5's audio element gives semantic meaning when it wraps sound or audio stream content in your markup. 
+        Audio content also needs a text alternative to be accessible to people who are deaf or hard of hearing. 
+        This can be done with nearby text on the page or a link to a transcript.
+    </p>
+    <p>The audio tag supports the controls attribute. This shows the browser default play, pause, and other controls, and supports keyboard functionality. 
+        This is a boolean attribute, meaning it doesn't need a value, its presence on the tag turns the setting on.
+    </p>
+    <p>Here's an example:</p>
+    <audio controls>
+        <source src="/resources/audio/criolo-aprendiz.mp3" type="audio/mpeg">
+    </audio>    
+    <textarea id="" name="textarea" rows="4" cols="30" wrap="off" readonly>
+        <audio controls>
+            <source src="/resources/audio/criolo-aprendiz.mp3" type="audio/mpeg">
+        </audio>    
+    </textarea>
+
+
+
+    <h2>Improve Form Field Accessibility with the lavel Element</h2>
+    <p>Improving accessibility with semantic HTML markup applies to using both appropriate tag names as well as attributes. 
+        The next several challenges cover some important scenarios using attributes in forms.</p>
+    <p>The <span>label</span> tag wraps the text for a specific form control item, usually the name or label for a choice. 
+        This ties meaning to the item and makes the form more readable. 
+        The <span>for</span> attribute on a <span>label</span> tag explicitly associates that <span>label</span> with the form control and is used by screen readers.</p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+    </form>
+    <textarea id="" name="textarea" rows="6" cols="40" wrap="off" readonly>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+        </form>
+    </textarea>
+
+    
+
+    <h2>Wrap Radio Buttons in a fieldset Element for Better Accessibility</h2>
+    <p>The next form topic covers accessibility of radio buttons. 
+        Each choice is given a <span>label</span> with a <span>for</span> attribute tying to the <span>id</span> of the corresponding item as covered in the last challenge. 
+        Since radio buttons often come in a group where the user must choose one, there's a way to semantically show the choices are part of a set.</p>
+    <p>The <span>fieldset</span> tag surrounds the entire grouping of radio buttons to achieve this. It often uses a <span>legend</span> tag to provide a description for the grouping, 
+        which is read by screen readers for each choice in the <span>fieldset</span> element.</p>
+    <p>Here's an example:</p>
+    <form>
+        <fieldset>
+          <legend>Choose one of these three items:</legend>
+          <input id="one" type="radio" name="items" value="one">
+          <label for="one">Choice One</label><br>
+          <input id="two" type="radio" name="items" value="two">
+          <label for="two">Choice Two</label><br>
+          <input id="three" type="radio" name="items" value="three">
+          <label for="three">Choice Three</label>
+        </fieldset>
+    </form>
+      
+
+
+    
+
+
+
     <label for="">Textarea</label>    
     <textarea id="" name="textarea" rows="4" cols="30" wrap="off" readonly>
         It was a dark and stormy night...
         <html></html>        
     </textarea>
-
 </body>
 </html>
