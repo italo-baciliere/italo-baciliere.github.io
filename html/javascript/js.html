@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
-  </head>
-  
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <!-- CSS Default-->
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/default_style.css">
+  <link rel="stylesheet" type="text/css" href="/css/footer.css">
+  <!-- CSS own -->
+  <link rel="stylesheet" type="text/css" href="/css/javascript/lesson_dom.css">
+</head>
+
 <body>
 
   <div>
@@ -24,25 +30,141 @@
 
   Bolo Front-End
 
-  <p id="player">Player 1: Maria
+  <p id="player">Player 1: Maria</p>
+
+
+  <h2>Função e Evento</h2>
+  <p>Uma função JavaScript é um bloco </p>
 
 
 
-    <script>
-      var paragrafo = document.getElementById("player");  
-      // console.log(document.getElementById("#player"));
-      // seleciona o elemento "p" do html e atribui a variável "paragrafo"
-      paragrafo.addEventListener('click', getName);            
-      // variável "paragrafo" escuta o evento 'click' e executa a função "novoNome"
-      function getName(){    
-        var nome = prompt('Entre com o novo nome!');
-        // Função "getName" cria a variável "nome" e manda uma mensagem na tela para o usuário digitar um valor.
-        paragrafo.textContent = 'Player1: ' + nome;
-        //Variavél "paragrafo" imprime no Elemento "p" Player1 + "nome digido pela usuário".
-        document.getElementById("player").classList.add("test_class");        
-      }
-    </script>
+  <!-- Manipulação do DOM -->
+  <section>
+    <br>
+    <h2>Manipulação do DOM</h2>
+    <br>
 
+    <!-- 1° Atividade -->
+    <div>
+      <p>
+        1- Crie uma página com uma pergunta: “Que fruta é essa?”.
+        A página deve conter também uma figura da sombra de
+        uma fruta.
+        Um campo de texto (formulário) para o usuário digitar
+        a resposta e um botão para verificar a resposta.
+        Ao digitar um nome no formulário e clicar no botão,
+        verifique se o usuário digitou o nome da fruta.
+        Se acertar de os parabéns.
+        Se não informe a resposta correta.
+      </p>
+      <br>
+      <form id="form_fruit">
+        <fieldset>
+          <legend>Que fruta é essa?</legend>
+          <img id="img_fruit" src="/resources/images/shadow_banana.png">
+          <br>
+          <p id="fruit_resp"></p></br>
+          <input type="text" maxlength="6" required id="input_fruit">
+          <button type="button" onclick="verify_fruit()">verificar</button>
+        </fieldset>
+      </form>
+    </div>
+
+
+    <!-- 2° Atividade -->
+    <div>
+      <p>
+        2- Crie uma página com uma pergunta: “Que fruta você mais gosta?”.A
+        página deve ter uma imagem de uma (?) interrogação, um formulário e um
+        botão. No formulário o usuário deverá entrar com um nome de uma fruta
+        (diversas). Ao clicar no botão, altere o src da imagem para exibir a imagem
+        correspondente à fruta escolhida pelo usuário. Caso não exista a fruta,
+        mantenha a interrogação e informe uma mensagem ” vamos cadastrar sua
+        fruta favorita.”
+      </p>
+    </div>
+
+
+    <!-- 3° Atividade -->
+    <div id="lesson_3_dom">
+      </br>
+      <p>
+        3- Crie uma página que mude dinamicamente seu estilo de acordo com o
+        horário do sistema.
+      </p>
+      <p>
+        Se o usuário acessar a página pela manhã, deve ser mostrado “Bom Dia”,
+        deve apresantar à hora e minutos atuas, a cor do “background” deve ser
+        uma cor mais clara para representar ‘dia' e uma imagem relacionada a uma
+        manhã de sol também deve ser apresentada. Essas caracteriscas devem
+        também acontacer para acesso a ‘tarde’ e ‘noite'. Quem quiser, pode fazer
+        para madrugada. Deve ser usado o IF ELSE para essas condicinais. Para
+        capturar a data atual pode ser usado a função new Date() e getHours() e
+        getMinutes() https://www.w3schools.com/jsref/jsref_gethours.asp. Para a
+        estrutura use o HTML e o CSS para ficar bonitinho.
+      </p>
+
+      <div id="daily_class" class="daily_class">
+        <p class="mensagem" class="mensagem">Bom Dia!</p>
+        <p class="hours" class="hours">Agora são 09:00 horas</p>
+        <img id="img_lesson_3" class="img_lesson_3">
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+
+    <section class="section-developer-data">
+
+      <div class="div-developer-data">
+
+        <img class="developer-picture" src="/resources/images/baciliere_perfil_picture_icon.ico"
+          alt="foto de perfil do desenvolvedor do site">
+
+        <div class="developer-data">
+
+          <p>Ítalo L. P. Baciliere</p>
+          <p>Augmented Reality Developer</p>
+
+        </div>
+
+      </div>
+
+      <div class="div-developer-media">
+
+        <a href="https://web.whatsapp.com/send?phone=+5531987310596&text=Olá+Ítalo!+%3A)&ie=utf-8&oe=utf-8"
+          target="_blank" data-wpel-link="external" rel="external noopener noreferrer"><img
+            src="/resources/images/whatsapp-logo-64-branco.png" alt="logo do site whatsapp web"></a>
+        <a href="https://github.com/italo-baciliere" target="_blank" data-wpel-link="external"
+          rel="external noopener noreferrer"><img src="/resources/images/github-logo-64-branco.png"
+            alt="logo do site instagram"></a>
+        <a href="https://www.linkedin.com/in/%C3%ADtalobaciliere" target="_blank" data-wpel-link="external"
+          rel="external noopener noreferrer"><img src="/resources/images/linkedin-logo-64-branco.png"
+            alt="logo do site linkedin"></a>
+        <a href="https://connect.unity.com/u/italo-l-p-baciliere" target="_blank" data-wpel-link="external"
+          rel="external noopener noreferrer"><img src="/resources/images/Unity_3D-250px.png"
+            alt="logo do site unity"></a>
+        <a href="https://github.com/italo-baciliere" target="_blank" data-wpel-link="external"
+          rel="external noopener noreferrer"><img src="/resources/images/gmail-white-500.png"
+            alt="logo do g-mail da google"></a>
+
+      </div>
+
+    </section>
+
+    <h1 class="copyright">&copy; Copyright 2020</h1>
+
+  </footer>
+
+
+
+  <script src="/javascript/javascript/atividade.js"></script>
+
+
+  
 </body>
 
-</html> 
+</html>

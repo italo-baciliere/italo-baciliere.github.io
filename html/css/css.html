@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>introduction to the responsive web design challenges</h1>
+
+    <p>Today, there are many types of devices that can access the web. 
+        They range from large desktop computers to small mobile phones. 
+        These devices have different screen sizes, resolutions, and processing power. 
+        Responsive Web Design is an approach to designing web content that responds to the constraints of different devices.</p>
+
+    <h2>create a media query</h2>
+    
+    <p>Media Queries are a new technique introduced in CSS3 that change the presentation of content based on different viewport sizes. 
+        The viewport is a user's visible area of a web page, and is different depending on the device used to access the site.</p>
+    <p>Media Queries consist of a media type, and if that media type matches the type of device the document is displayed on, 
+        the styles are applied. You can have as many selectors and styles inside your media query as you want.</p>
+    <p>Here's an example of a media query that returns the content when the device's width is less than or equal to 100px:</p>
+    
+    <textarea id="" name="textarea" rows="3" cols="30" wrap="off" readonly>
+        
+        @media (max-width: 100px) { /* CSS Rules */ }
+    </textarea>
+
+    <p>and the following media query returns the content when the device's height is more than or equal to 350px:</p>
+
+    <textarea id="" name="textarea" rows="3" cols="30" wrap="off" readonly>
+        
+        @media (min-height: 100px) { /* CSS Rules */ }
+    </textarea>
+
+
+    <!--
+    <label for="">Textarea</label>    
+    <textarea id="" name="textarea" rows="4" cols="30" wrap="off" readonly>
+        It was a dark and stormy night...
+        <html></html>        
+    </textarea>
+    -->
+</body>
+</html>

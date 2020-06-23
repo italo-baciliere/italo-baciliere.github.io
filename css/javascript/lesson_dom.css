@@ -1,0 +1,43 @@
+/*
+Lesson 3 - DOM
+*/
+.daily_class{
+    width: 300px;
+    height: auto;
+    margin: 40px auto;    
+    padding: 40px;
+}
+
+.daily_class .img_lesson_3{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.dawn{
+    background: linear-gradient(0deg, rgba(5,0,91,1) 26%, rgba(8,27,133,1) 49%, rgba(5,111,188,1) 100%, rgba(0,64,77,0.9457983022310487) 100%);
+    color: white;
+}
+.day{
+    background: linear-gradient(0deg, rgba(255,252,226,1) 2%, rgba(226,219,95,1) 56%, rgba(242,187,107,1) 100%);
+}
+.evening{
+    background: linear-gradient(0deg, rgba(230,225,185,1) 0%, rgba(227,218,67,1) 33%, rgba(215,132,10,1) 100%); 
+}
+.night{
+    background: linear-gradient(0deg, rgba(5,0,91,1) 26%, rgba(8,27,133,1) 49%, rgba(5,111,188,1) 100%, rgba(0,64,77,0.9457983022310487) 100%);
+    color: white;
+}
+
+.img_dawn{
+    background: #ffff url(/resources/images/moon.png) no-repeat center;
+}
+.img_day{
+    background: #ffff url(/resources/images/sun.png) no-repeat center;    
+}
+.img_evening{
+    background: #ffff url(/resources/images/sun.png) no-repeat center;        
+}
+.img_night{    
+    background: #ffff url(/resources/images/moon.png) no-repeat center;
+}
